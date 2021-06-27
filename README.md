@@ -18,9 +18,8 @@ The various validators in use; the algorithm I got via research online, but beca
 
 ### Usage
 
-Download into a git and npm initalized directory and run 'npm install' to install dependencies. Then type 'npm start' and go to http://localhost:3001/ in either your browser or Insomnia.
-For the endpoints, [thought's can be found here](./routes/api/thought-routes.js)
-
+Download into a git and npm initalized directory and run 'npm install' to install dependencies. Then type 'npm start' and go to http://localhost:3001/ in either your browser or Insomnia.</br>
+For the endpoints, [thought's can be found here](./routes/api/thought-routes.js) and [user's here](./routes/api/user-routes.js)
 
 ##### Tools used
 
