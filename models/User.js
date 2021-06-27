@@ -14,7 +14,7 @@ const UserSchema = new Schema(
             unique: true,
             validate: {// from https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax
                 validator: function(v) {
-                    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v);// email val regex
+                    return /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/.test(v);// email val regex
                 },
                 message: "Please enter a valid email"
             }     
@@ -41,7 +41,7 @@ const UserSchema = new Schema(
     }
 );
 
-CommentSchema.virtual('friendCount').get(function() {
+UserSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 });
 
