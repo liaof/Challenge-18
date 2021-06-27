@@ -23,16 +23,4 @@ router.route('/:userId/friends/:friendId')
         .post(addFriend)
         .delete(deleteFriend);
 
-
-
-
-// get all 
-// get by _id, plus thought and friend data
-// post new user
-// put to update by _id
-// delete by _id
-
-
-
-
 module.exports = router;
